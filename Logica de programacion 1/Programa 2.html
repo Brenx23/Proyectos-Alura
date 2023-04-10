@@ -37,4 +37,32 @@ document.write("<br>");
 document.write("el año de nacimiento de Carlos es...");
 document.write("<br>");
 document.write(2023-15);
+
+document.write("<br>");
+document.write("<br>");
+
+// Otro ejemplo
+
+var año = new Date().getFullYear(); //Esta es una variable que se esta definiendo
+// para que no se tenga que estar modificando
+
+var actual = new Date().getFullYear();
+// new Date es una funcion que nos ayuda para que no tengas que poner el año actual manualmente 
+// si no que se haga en automatico
+var edadCarlos = 15;
+
+document.write("Juan tine " + (año-2003) + "Años");
+document.write("<br>");
+document.write(2023-20);
+document.write("<br>");
+document.write("<br>");
+document.write("Pedro tine " + (año-1998) + "Años");
+document.write("<br>");
+document.write(2023-25);
+document.write("<br>");
+document.write("<br>");
+document.write("Carlos tine " + (año-2008) + "Años");
+document.write("<br>");
+document.write(`${actual - edadCarlos}`);
+
 </script>
