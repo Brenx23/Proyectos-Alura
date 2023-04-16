@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>Programa</h1>
+
+<script>
+
+function saltarLinea() {//esta funcion no tiene ningun parametro ()
+    //Recuerda que una funcion siempre va seguida de parentesis
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}
+function imprimir(frase) { //esta funcion si esta esperando un parametro de (frase)
+//recuerda que una funcion tambien  puedes estar mandando a llamar otra funcion
+    document.write(frase);
+    saltarLinea();
+}
+
+let año = 2025;//Esta es una variable que se esta definiendo
+imprimir("hola amigos");
+
+//este codigo calcula las edades de juan, pedro y carlos.
+
+imprimir("Juan tine: " + (año-2003) + " Años");
+
+imprimir("Pedro tine: " + (año-1998) + " Años");
+
+imprimir("Carlos tine: " + (año-2008) + " Años");
+
+
+</script>

@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+<h1>Programa calcular IMC</h1>
+
+<script>
+
+function saltarLinea() {
+
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+}
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+function calcularImc(peso,altura,nombre){//en una funcion yo puedo agregar el numero de parametros que me sean necesarios.
+
+    imc = peso / (altura * altura);
+    imprimir("El imc calculado de " + nombre + " es " + Math.floor(imc));
+
+}
+
+calcularImc(60,1.60,"Bren");
+calcularImc(71,1.70,"Rodo");
+
+// ejemplo dos calculando el promedio de los 2 imc
+
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+function calcularImc(peso,altura){// asi queda mas lipio el codigo
+
+    imc = peso / (altura * altura);
+    return imc;
+
+}
+
+// var imcBren= calcularImc(60,1.60);
+// var imcRodo= calcularImc(71,1.70);
+
+//imprimir("El promedio del inc calculado de Bren y Rodo es: " + (imcBren+imcRodo)/2);
+
+imprimir("El promedio del imc calculado de Bren y Rodo es: " + (calcularImc(60,1.60)+calcularImc(71,1.70))/2);
+
+//ejemplo 3
+
+function saltarLinea() {
+
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+}
+
+function imprimir(frase) {
+document.write(frase);
+saltarLinea();
+}
+
+function calcularImc(peso,altura){// asi queda mas lipio el codigo
+
+    return (peso / (altura * altura));
+
+}
+
+let nombre = prompt ("Informe su nombre");// si tu no le pones let a tu variable automaticamente te pondra un var
+let pesoInformado = prompt(nombre + ", informe su peso");
+let alturaInformado = prompt(nombre + ", informe su altura");
+
+imcCalculado = calcularImc(pesoInformado,alturaInformado);
+
+imprimir(nombre +  ", su indice de imc calculado es: " + imcCalculado);
+
+
+
+</script>
