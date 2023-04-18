@@ -1,0 +1,55 @@
+<script>
+function saltarLinea() {
+
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+}
+
+function imprimir(frase) {
+document.write(frase);
+saltarLinea();
+}
+
+function calcularImc(peso,altura){// asi queda mas lipio el codigo
+
+    return (peso / (altura * altura));
+
+}
+
+let nombre = prompt ("Informe su nombre");// si tu no le pones let a tu variable automaticamente te pondra un var
+let pesoInformado = prompt(nombre + ", informe su peso");
+let alturaInformado = prompt(nombre + ", informe su altura");
+
+imcCalculado = calcularImc(pesoInformado,alturaInformado);
+
+imprimir(nombre +  ", su indice de imc calculado es: " + imcCalculado);
+
+if (imcCalculado < 18.5){// estas son condiciones que se le da a js de estilo vuleano donde el resultadio se dara en verdadero
+
+    imprimir("Su imc esta por debajo de lo recomendado: ");
+
+}
+
+if (imcCalculado >= 18.5){// estas son condiciones que se le da a js de estilo vuleano donde el resultadio se dara en verdadero
+    if (imcCalculado < 25){
+
+        imprimir("Su imc esta por debajo de lo recomendado: ");
+
+    }
+
+if (imcCalculado >= 25){
+    if(imcCalculado < 30) {
+
+        imprimir("Su imcconsiderado como sobrepeso: ");
+
+    }
+}
+
+
+if (imcCalculado >= 30){// estas son condiciones que se le da a js de estilo vuleano donde el resultadio se dara en verdadero
+
+    imprimir("Su imc es considerado como obesidad ");
+}
+}
+</script>
